@@ -40,6 +40,7 @@ export class EmployeeService {
     employee.name = employeeDto.name;
     employee.mobile = employeeDto.mobile;
     employee.address = employeeDto.address;
+    employee.roles = employeeDto.roles;
 
     return await this.employeeRepository.save(employee);
   }

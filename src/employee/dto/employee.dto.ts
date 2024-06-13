@@ -1,4 +1,5 @@
-import { IsNotEmpty, IsString, Length, Matches } from 'class-validator';
+import { ArrayNotEmpty, IsArray, IsEnum, IsNotEmpty, IsString, Length, Matches } from 'class-validator';
+import Role from '../../common/constant/role.enum';
 
 export class EmployeeDto {
 
@@ -20,4 +21,10 @@ export class EmployeeDto {
   @IsString()
   @Length(1, 255)
   address: string;
+
+  @IsNotEmpty({ message: 'Roles are required' })
+  @IsArray()
+  @ArrayNotEmpty()
+  @IsEnum(Role, { each: true })
+  roles: Role[];
 }
