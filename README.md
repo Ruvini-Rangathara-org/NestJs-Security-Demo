@@ -44,6 +44,13 @@ $ npm run test:cov
 ## Install the following packages
 ````
 npm install --save @nestjs/jwt
+npm install typeorm
+npm install class-validator
+npm install @nestjs/typeorm
+npm install @nestjs/config
+npm install pg --save
+npm install dotenv
+
 ````
 
 ## API Documentation
