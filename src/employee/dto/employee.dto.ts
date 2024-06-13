@@ -22,9 +22,4 @@ export class EmployeeDto {
   @Length(1, 255)
   address: string;
 
-  @IsNotEmpty({ message: 'Roles are required' })
-  @IsArray()
-  @ArrayNotEmpty()
-  @IsEnum(Role, { each: true })
-  roles: Role[];
 }

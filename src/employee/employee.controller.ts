@@ -1,7 +1,8 @@
-import { Controller, Get, Post, Body, Param, Put, Delete } from '@nestjs/common';
+import { Controller, Post, Body, UseGuards } from '@nestjs/common';
 import { EmployeeService } from './employee.service';
 import { Employee } from '../common/schema/employee.entity';
 import { EmployeeDto } from './dto/employee.dto';
+import { AuthGuard } from '../auth/auth.guard';
 
 @Controller('employee')
 export class EmployeeController {
