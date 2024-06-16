@@ -24,6 +24,10 @@ export class MemberService {
     return this.memberRepository.findOne({ where: { id } });
   }
 
+  async findOneByUsername(username: string): Promise<Member> {
+    return this.memberRepository.findOne({ where: { username } });
+  }
+
   async update(id: string, memberDto: MemberDto): Promise<Member> {
     await this.memberRepository.update(id, memberDto);
     return this.findOne(id);

@@ -7,6 +7,7 @@ import { Member } from '../common/schema/member.entity';
 @Module({
   imports: [TypeOrmModule.forFeature([Member])],
   controllers: [MemberController],
-  providers: [MemberService]
+  providers: [MemberService],
+  exports:[MemberService]
 })
 export class MemberModule {}

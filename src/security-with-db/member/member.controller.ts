@@ -1,7 +1,8 @@
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Post, UseGuards } from '@nestjs/common';
 import { MemberService } from './member.service';
 import { MemberDto } from './dto/member.dto';
 import { Member } from '../common/schema/member.entity';
+import { AuthDbGuard } from '../auth-db/auth-db-guard';
 
 @Controller('member')
 export class MemberController {
@@ -17,9 +18,15 @@ export class MemberController {
     return this.memberService.findAll();
   }
 
+  @UseGuards(AuthDbGuard)
   @Post('get')
   findOne(@Body('id') id: string): Promise<Member> {
     return this.memberService.findOne(id);
+  }
+
+  @Post('getByUsername')
+  findOneByUsername(@Body('username') username: string): Promise<Member> {
+    return this.memberService.findOneByUsername(username);
   }
 
   @Post('update')
