@@ -4,7 +4,7 @@
 
 
   <h1 align="center">Security Demo Application with NestJS</h1>
-This application is built with NestJS and provides a simple authentication mechanism using JWT (JSON Web Tokens).
+This application demonstrates JWT-based authentication with in-memory users and authentication, authorization with database users.
 
 ## Installation
 
