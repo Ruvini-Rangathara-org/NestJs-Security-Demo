@@ -22,7 +22,7 @@ export class AuthDbService {
       console.log('Password does not match');
       throw new UnauthorizedException();
     }
-    const payload = { sub: member.id, username: member.username };
+    const payload = { id: member.id, username: member.username };
     return {
       access_token: await this.jwtService.signAsync(payload),
     };

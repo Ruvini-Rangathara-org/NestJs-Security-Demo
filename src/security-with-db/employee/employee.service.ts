@@ -16,6 +16,7 @@ export class EmployeeService {
   }
 
   async findOne(id: string): Promise<Employee> {
+    console.log('id in service : ', id);
     const employee = await this.employeeRepository.findOne({
       where: { id },
     });
