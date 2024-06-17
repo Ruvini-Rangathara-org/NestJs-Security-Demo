@@ -45,7 +45,6 @@ https://documenter.getpostman.com/view/28283365/2sA3XPDNdR
 
 <br>
 <br>
-<hr style="height: 5px;">
 
  <h1 align="center"> In-Memory User Authentication and Authorization </h1>
 
@@ -155,7 +154,6 @@ This project provides a basic example of in-memory user authentication and autho
 <br>
 
 
-<hr style="height: 5px">
 
  <h1 align="center"> Security with JWT and Database Integration </h1>
 
