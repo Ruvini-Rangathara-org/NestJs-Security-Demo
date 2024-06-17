@@ -87,6 +87,7 @@ This project demonstrates a simple in-memory user authentication and authorizati
     "username": "john"
   }
   ```
+<br>
 
 ## Services and Guards
 
@@ -102,6 +103,8 @@ This project demonstrates a simple in-memory user authentication and authorizati
 
 ### `AuthGuard`
 - **Purpose**: Custom guard that checks if a request is authenticated by validating the JWT token.
+
+<br>
 
 ## Setup and Running the Project
 
@@ -128,6 +131,8 @@ The following users are pre-defined in the in-memory storage:
     - `userId`: 2
     - `username`: `maria`
     - `password`: `guess`
+
+<br>
 
 ## Example Usage
 
@@ -206,6 +211,8 @@ This project provides a basic example of in-memory user authentication and autho
 - **Response**: Returns a message confirming the deletion.
 
 ---
+<br>
+
 ## MemberController Endpoints
 
 ### `POST /member/create`
@@ -258,6 +265,8 @@ This project provides a basic example of in-memory user authentication and autho
 - **Response**: Returns a message confirming the deletion.
 
 ---
+<br>
+
 ## AuthDbController Endpoints
 
 ### `POST /auth-db/login`
@@ -306,5 +315,4 @@ This project provides a basic example of in-memory user authentication and autho
 
 This project provides a structured and secure way to manage employees and members with appropriate authentication and authorization mechanisms in place. Feel free to extend the functionalities and adapt the system to your specific needs.
 
----
 
